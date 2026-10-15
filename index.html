@@ -1,6 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
+<head><<!DOCTYPE html>
+<html lang="es">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cursos de Arquitectura — Todos nuestros cursos</title>
+<link rel="icon" type="image/png" href="favicon_bold.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E2438;
+    --ink-2:#153650;
+    --ink-3:#1D4568;
+    --line:#9FC6E8;
+    --line-dim:#4A7BA6;
+    --paper:#F3EFE3;
+    --paper-2:#E7E0CC;
+    --graphite:#20201C;
+    --signal:#E85D2B;
+    --signal-dim:#C6491E;
+    --ok:#3F8F6B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'IBM Plex Sans',sans-serif;
+    background:var(--ink);
+    color:var(--paper);
+    line-height:1.5;
+    min-height:100vh;
+    background-image:linear-gradient(rgba(159,198,232,0.06) 1px, transparent 1px),linear-gradient(90deg, rgba(159,198,232,0.06) 1px, transparent 1px);
+    background-size:36px 36px;
+  }
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:520px;margin:0 auto;padding:48px 20px 60px;}
+  .top-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:36px;}
+  .icon-btn{width:38px;height:38px;border:1px solid var(--line-dim);border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--ink-2);}
+  .icon-btn svg{width:16px;height:16px;stroke:var(--line);fill:none;stroke-width:1.8;}
+  .profile{text-align:center;margin-bottom:40px;}
+  .logo-badge{width:96px;height:96px;border-radius:24px;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;background:var(--ink-2);border:1px solid var(--line-dim);overflow:hidden;}
+  .logo-badge img{width:100%;height:100%;object-fit:cover;}
+  .profile h1{font-family:'Space Grotesk',sans-serif;font-size:26px;color:var(--paper);margin-bottom:6px;}
+  .profile p{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--line-dim);text-transform:uppercase;letter-spacing:0.08em;}
+  .social-row{display:flex;justify-content:center;gap:12px;margin-top:20px;}
+  .social-btn{width:40px;height:40px;border-radius:50%;background:var(--ink-2);border:1px solid var(--line-dim);display:flex;align-items:center;justify-content:center;transition:transform .15s ease, border-color .15s ease;}
+  .social-btn:hover{transform:translateY(-2px);border-color:var(--line);}
+  .social-btn svg{width:19px;height:19px;stroke:var(--line);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+  .links{display:grid;gap:12px;}
+  .course-card{
+    display:flex;align-items:center;gap:14px;
+    background:var(--ink-2);
+    border:1px solid var(--line-dim);
+    padding:16px 18px;
+    transition:transform .15s ease, border-color .15s ease;
+  }
+  .course-card:hover{transform:translateY(-2px);border-color:var(--line);}
+  .course-icon{width:50px;height:50px;flex:none;border-radius:8px;display:flex;align-items:center;justify-content:center;background:var(--paper);overflow:hidden;padding:0;}
+  .course-icon img{width:100%;height:100%;object-fit:contain;}
+  .course-body{flex:1;}
+  .course-body b{display:block;font-size:14.5px;color:var(--paper);font-weight:600;line-height:1.3;}
+  .course-body span{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--line-dim);text-transform:uppercase;letter-spacing:0.06em;}
+  .course-arrow{flex:none;width:18px;height:18px;stroke:var(--line-dim);fill:none;stroke-width:2;}
+  .course-card:hover .course-arrow{stroke:var(--signal);}
+  .soon{opacity:0.55;pointer-events:none;}
+  .soon .course-body span{color:var(--signal-dim);}
+  footer{text-align:center;margin-top:44px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--line-dim);}
+  footer a{text-decoration:underline;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top-row">
+      <div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+    </div>
+
+    <div class="profile">
+      <div class="logo-badge"><img src="logo_perfil_1080.png" alt="Cursos de Arquitectura"></div>
+      <h1>Cursos Arquitectura</h1>
+      <p>Cursos de Arquitectura · 100% Online</p>
+      <div class="social-row">
+        <a class="social-btn" href="https://www.instagram.com/cursos.arquitectura/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/></svg>
+        </a>
+        <a class="social-btn" href="https://www.tiktok.com/@cursos.arquitectura" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M14 3v10.5a3 3 0 1 1-2.5-3V7.5"/><path d="M14 3c0 2.5 1.8 4.5 4.5 4.5"/></svg>
+        </a>
+        <a class="social-btn" href="https://www.youtube.com/@cursosarquitectura" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9v6l5-3z" style="fill:var(--ink);stroke:none;"/></svg>
+        </a>
+        <a class="social-btn" href="https://www.facebook.com/profile.php?id=100090229551757" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><text x="12" y="16.5" text-anchor="middle" style="font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;fill:var(--line);stroke:none;">f</text></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="links">
+      <a class="course-card" href="https://cursosdearquitectura.github.io/cursoautocad/" target="_blank" rel="noopener">
+        <div class="course-icon"><img src="icon-autocad.png" alt="AutoCAD"></div>
+        <div class="course-body"><b>CAD·MASTER — Domina AutoCAD de cero a experto</b><span>Curso online</span></div>
+        <svg class="course-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <a class="course-card" href="https://cursosdearquitectura.github.io/cursorevit/" target="_blank" rel="noopener">
+        <div class="course-icon"><img src="icon-revit.png" alt="Revit"></div>
+        <div class="course-body"><b>REVIT·MASTER — Domina Revit + BIM de cero a experto</b><span>Curso online</span></div>
+        <svg class="course-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <a class="course-card" href="https://cursosdearquitectura.github.io/cursosketchup/" target="_blank" rel="noopener">
+        <div class="course-icon"><img src="icon-sketchup.png" alt="SketchUp"></div>
+        <div class="course-body"><b>SKETCHUP·MASTER — Domina SketchUp + V-Ray de cero a experto</b><span>Curso online</span></div>
+        <svg class="course-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <div class="course-card soon">
+        <div class="course-icon"><img src="icon-civil3d.png" alt="Civil 3D"></div>
+        <div class="course-body"><b>Civil 3D</b><span>Próximamente</span></div>
+        <svg class="course-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </div>
+
+      <div class="course-card soon">
+        <div class="course-icon"><img src="icon-3dsmax.svg" alt="3ds Max" style="padding:4px;box-sizing:border-box;"></div>
+        <div class="course-body"><b>3ds Max</b><span>Próximamente</span></div>
+        <svg class="course-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 Cursos de Arquitectura · <a href="https://wa.me/5493516621871" target="_blank" rel="noopener">Contacto por WhatsApp</a>
+    </footer>
+  </div>
+</body>
+</html>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST6LTYF6DD"></script>
 <script>
